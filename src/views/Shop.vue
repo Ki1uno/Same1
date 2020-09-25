@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <h1>首</h1>
-    <h1>页</h1>
+  <div class="shop">
+    <h1>商</h1>
+    <h1>城</h1>
   </div>
 </template>
 

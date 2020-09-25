@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <h1>首</h1>
-    <h1>页</h1>
+  <div class="plan">
+    <h1>计</h1>
+    <h1>划</h1>
   </div>
 </template>
 
