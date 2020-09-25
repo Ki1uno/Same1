@@ -44,18 +44,20 @@ export default {};
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
-a {
+.footer a {
   text-decoration: none;
   color: #000;
 }
-i {
+.footer i {
   position: relative;
   bottom: 10px;
   font-size: 35px;
+  color: #409EFF;
 }
-p {
+.footer p {
   margin-bottom: 10px;
+  color: #409EFF;
 }
 </style>
