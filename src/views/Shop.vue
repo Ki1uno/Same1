@@ -151,7 +151,7 @@
     <!-- 限时活动 -->
     <el-row>
   <el-col :span="12">
-    <div class="grid-content bg-purple">
+    <div class="grid-content bg-purple" style="background-color:#AD0707;">
       <h2 style="color:#FFDC00;">限时秒杀</h2>
       <span style="color:#E5E9F2;">{{hour? hourString+':'+minuteString+':'+secondString : minuteString+':'+secondString}}</span>
       <br>
