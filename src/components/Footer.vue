@@ -45,6 +45,7 @@ export default {};
   bottom: 0;
   width: 100%;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 .footer a {
   text-decoration: none;
@@ -57,7 +58,7 @@ export default {};
   color: #409EFF;
 }
 .footer p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #409EFF;
 }
 </style>
