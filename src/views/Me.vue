@@ -248,7 +248,6 @@ export default {
   },
 };
 </script>
-
 <style>
 /* 顶部 */
 .home-top {
