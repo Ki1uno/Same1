@@ -1,7 +1,7 @@
 <template>
   <div class="shop">
-   <!-- 商城顶部搜索 -->
-   <el-row type="flex" class="shop-top" justify="space-around">
+    <!-- 商城顶部搜索 -->
+    <el-row type="flex" class="shop-top" justify="space-around">
       <el-col :span="3">
         <div>
           <i class="el-icon-full-screen"></i>
@@ -16,7 +16,7 @@
       </el-col>
       <el-col :span="2">
         <div>
-         <a href="" style="color:#409eff;"><i class="el-icon-search"></i></a>
+          <a href="" style="color: #409eff"><i class="el-icon-search"></i></a>
         </div>
       </el-col>
       <el-col :span="3">
@@ -26,29 +26,29 @@
       </el-col>
     </el-row>
     <!-- 商城大分类 -->
-    <el-row class="shop-fenlei" style="margin-top:10px;">
- <el-col :span="6">
+    <el-row class="shop-fenlei" style="margin-top: 10px">
+      <el-col :span="6">
         <div>
-        <el-tag >商城自营</el-tag>
+          <el-tag>商城自营</el-tag>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-        <el-tag type="success">运动器材</el-tag>
+          <el-tag type="success">运动器材</el-tag>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-        <el-tag type="warning">营养美食</el-tag>
+          <el-tag type="warning">营养美食</el-tag>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-         <el-tag type="danger">课程同款</el-tag>
+          <el-tag type="danger">课程同款</el-tag>
         </div>
       </el-col>
-</el-row>
-    
+    </el-row>
+
     <!-- 轮播图 -->
     <div class="banner">
       <el-carousel trigger="click">
@@ -78,36 +78,36 @@
         </el-carousel-item>
       </el-carousel>
     </div>
-  <!-- 商城细分 -->
-   <el-row type="flex" class="shop-menu" justify="space-around">
+    <!-- 商城细分 -->
+    <el-row type="flex" class="shop-menu" justify="space-around">
       <el-col :span="6">
         <div>
-          <a href="#"> 
-            <img src="../assets/运动2.png" style="height:35px;"><br>
+          <a href="#">
+            <img src="../assets/运动2.png" style="height: 35px" /><br />
             <span>户外运动</span>
-            </a>
+          </a>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
           <a href="#">
-            <img src="../assets/康复训练.png" style="height:35px;"><br>
+            <img src="../assets/康复训练.png" style="height: 35px" /><br />
             <span>康复器械</span>
           </a>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-         <a href="#">
-            <img src="../assets/孕妇.png" style="height:35px;"><br>
-           <span>宝妈专区</span>
+          <a href="#">
+            <img src="../assets/孕妇.png" style="height: 35px" /><br />
+            <span>宝妈专区</span>
           </a>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-           <a href="#">
-            <img src="../assets/婴儿.png" style="height:35px;"><br>
+          <a href="#">
+            <img src="../assets/婴儿.png" style="height: 35px" /><br />
             <span>婴幼儿专区</span>
           </a>
         </div>
@@ -117,135 +117,212 @@
     <el-row type="flex" class="shop-menu" justify="space-around">
       <el-col :span="6">
         <div>
-          <a href="#"> 
-            <img src="../assets/青年节.png" style="height:30px;"><br>
+          <a href="#">
+            <img src="../assets/青年节.png" style="height: 30px" /><br />
             <span>青少年专区</span>
-            </a>
+          </a>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
           <a href="#">
-            <img src="../assets/playball.png" style="height:30px;"><br>
+            <img src="../assets/playball.png" style="height: 30px" /><br />
             <span>运动器械</span>
           </a>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-         <a href="#">
-            <img src="../assets/运动裤.png" style="height:30px;"><br>
-           <span>运动服饰</span>
+          <a href="#">
+            <img src="../assets/运动裤.png" style="height: 30px" /><br />
+            <span>运动服饰</span>
           </a>
         </div>
       </el-col>
       <el-col :span="6">
         <div>
-           <a href="#">
-            <img src="../assets/teachknolege.png" style="height:30px;"><br>
+          <a href="#">
+            <img src="../assets/teachknolege.png" style="height: 30px" /><br />
             <span>科技健身</span>
           </a>
         </div>
       </el-col>
     </el-row>
     <!-- 限时活动 -->
+    <el-row :gutter="10">
+      <el-col :span="12" :push="0">
+        <div class="grid-content bg-purple" style="background-color: #ad0707">
+          <h2 style="color: #ffdc00">限时秒杀</h2>
+          <span style="color: #e5e9f2">{{
+            hour
+              ? hourString + ":" + minuteString + ":" + secondString
+              : minuteString + ":" + secondString
+          }}</span>
+          <br />
+          <img
+            src="../assets/wallhaven-2k3go6.jpg"
+            style="height: 100px; width: 75px"
+          />
+          <br />
+          <span style="color: #ffffff">优选三文鱼-低至5折</span>
+          <br />
+        </div>
+      </el-col>
+
+      <el-col :span="12" :push="0">
+        <div class="grid-content bg-purple" style="background-color: #ffdc00">
+          <h2 style="color: #ad0707">团购优惠</h2>
+          <span style="color: #ffffff">{{
+            hour
+              ? hourString + ":" + minuteString + ":" + secondString
+              : minuteString + ":" + secondString
+          }}</span>
+          <br />
+          <img
+            src="../assets/wallhaven-nz5gkj.jpg"
+            style="height: 100px; width: 75px"
+          />
+          <br />
+          <span style="color: #ffffff">低卡鸡肉</span>
+          <br /></div
+      ></el-col>
+    </el-row>
+    <!-- 达人推荐榜 -->
     <el-row>
-  <el-col :span="12">
-    <div class="grid-content bg-purple" style="background-color:#AD0707;">
-      <h2 style="color:#FFDC00;">限时秒杀</h2>
-      <span style="color:#E5E9F2;">{{hour? hourString+':'+minuteString+':'+secondString : minuteString+':'+secondString}}</span>
-      <br>
-      <img src="../assets/wallhaven-nko5v1.jpg" style="height:100px">
-      <br>
-      <span style="color:#E5E9F2;">优选三文鱼-低至5折</span>
-      <br>
-      <img src="../assets/wallhaven-2k3go6.jpg" style="height:100px">
-      <br>
-      <span style="color:#E5E9F2;">全麦面包-低脂高饱腹感</span>
-    </div>
-    </el-col>
-  
-  <el-col :span="12"><div class="grid-content bg-purple-light">
-    
-    </div></el-col>
-</el-row>
+      <el-col :span="24"
+        ><div
+          class="grid-content bg-purple-dark"
+          style="background-color: #ff4000"
+        >
+          <h2 style="color: white">达人推荐榜</h2>
+        </div></el-col
+      >
+    </el-row>
+    <!-- 商品栏 -->
+    <el-row :gutter="10">
+      <el-col :span="6" :push="0">
+        <div class="grid-content bg-purple" style="background-color: #f0f9eb">
+          <img
+            src="../assets/wallhaven-4lpdz2.jpg"
+            style="height: 100px; width: 75px"
+          />
+          <br />
+          <span style="color: black">运动耳机</span>
+          <span style="color: black">￥256</span>
+        </div>
+      </el-col>
+      <el-col :span="6" :push="0">
+        <div class="grid-content bg-purple" style="background-color: #ecf5ff">
+          <img
+            src="../assets/wallhaven-4lpdz2.jpg"
+            style="height: 100px; width: 75px"
+          />
+          <br />
+          <span style="color: #ffffff">低卡鸡肉卷-团购价29.9！</span>
+          <br /></div
+      ></el-col>
+      <el-col :span="6" :push="0">
+        <div class="grid-content bg-purple" style="background-color: #d3dce6">
+          <img
+            src="../assets/wallhaven-4lpdz2.jpg"
+            style="height: 100px; width: 75px"
+          />
+          <br />
+          <span style="color: #ffffff">低卡鸡肉卷-团购价29.9！</span>
+          <br /></div
+      ></el-col>
+      <el-col :span="6" :push="0">
+        <div class="grid-content bg-purple" style="background-color: #d3dce6">
+          <img
+            src="../assets/wallhaven-4lpdz2.jpg"
+            style="height: 100px; width: 75px"
+          />
+          <br />
+          <span style="color: #ffffff">低卡鸡肉卷-团购价29.9！</span>
+          <br /></div
+      ></el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Date',
-   data() {
-      return {
-        input: '',
-       hour: '',
-        minute: '',
-        second: '',
-        promiseTimer: ''
-      }
+  name: "Date",
+  data() {
+    return {
+      input: "",
+      hour: "",
+      minute: "",
+      second: "",
+      promiseTimer: "",
+    };
+  },
+  props: {
+    remainTime: {
+      // 倒计时间总秒数
+      default: "30000000000",
     },
-     props: {
-      remainTime: {    // 倒计时间总秒数
-        default: '30000000000'
-      }
-    },
-    mounted () {
-      if (this.remainTime > 0) {
-        this.hour = Math.floor((this.remainTime / 3600) % 24)
-        this.minute = Math.floor((this.remainTime / 60) % 60)
-        this.second = Math.floor(this.remainTime % 60)
-        this.countDowm()
-      }
-    },
-   methods: {
-     countDowm () {
-        var self = this
-        clearInterval(this.promiseTimer)
-        this.promiseTimer = setInterval(function () {
-          if (self.hour === 0) {
-            if (self.minute !== 0 && self.second === 0) {
-              self.second = 59
-              self.minute -= 1
-            } else if (self.minute === 0 && self.second === 0) {
-              self.second = 0
-              self.$emit('countDowmEnd', true)
-              clearInterval(self.promiseTimer)
-            } else {
-              self.second -= 1
-            }
+  },
+  mounted() {
+    if (this.remainTime > 0) {
+      this.hour = Math.floor((this.remainTime / 3600) % 24);
+      this.minute = Math.floor((this.remainTime / 60) % 60);
+      this.second = Math.floor(this.remainTime % 60);
+      this.countDowm();
+    }
+  },
+  methods: {
+    countDowm() {
+      var self = this;
+      clearInterval(this.promiseTimer);
+      this.promiseTimer = setInterval(function () {
+        if (self.hour === 0) {
+          if (self.minute !== 0 && self.second === 0) {
+            self.second = 59;
+            self.minute -= 1;
+          } else if (self.minute === 0 && self.second === 0) {
+            self.second = 0;
+            self.$emit("countDowmEnd", true);
+            clearInterval(self.promiseTimer);
           } else {
-            if (self.minute !== 0 && self.second === 0) {
-              self.second = 59
-              self.minute -= 1
-            } else if (self.minute === 0 && self.second === 0) {
-              self.hour -= 1
-              self.minute = 59
-              self.second = 59
-            } else {
-              self.second -= 1
-            }
+            self.second -= 1;
           }
-        }, 1000)
-      },
-      formatNum (num) {
-        return num < 10 ? '0' + num : '' + num
-      }
+        } else {
+          if (self.minute !== 0 && self.second === 0) {
+            self.second = 59;
+            self.minute -= 1;
+          } else if (self.minute === 0 && self.second === 0) {
+            self.hour -= 1;
+            self.minute = 59;
+            self.second = 59;
+          } else {
+            self.second -= 1;
+          }
+        }
+      }, 1000);
     },
-    computed: {
-      hourString () {
-        return this.formatNum(this.hour)
-      },
-      minuteString () {
-        return this.formatNum(this.minute)
-      },
-      secondString () {
-        return this.formatNum(this.second)
-      }
+    formatNum(num) {
+      return num < 10 ? "0" + num : "" + num;
+    },
+  },
+  computed: {
+    hourString() {
+      return this.formatNum(this.hour);
+    },
+    minuteString() {
+      return this.formatNum(this.minute);
+    },
+    secondString() {
+      return this.formatNum(this.second);
+    },
   },
 };
 </script>
 
 <style scoped>
+.shop {
+  padding-bottom: 60px;
+}
 .shop-top {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   padding: 10px 0;
@@ -268,51 +345,50 @@ export default {
   line-height: 40px;
   color: #409eff;
 }
-.shop-fenlei{
+.shop-fenlei {
   background-color: white;
 }
- .el-carousel__item h3 {
-    color: #475669;
-    font-size: 18px;
-    opacity: 0.75;
-    line-height: 170px;
-    margin: 0;
-  }
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
-  }
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  .el-row {
-    margin-bottom: 20px;
-    }
- .el-row:last-child {
-      margin-bottom: 0;
-    
-  }
-  .el-col {
-    border-radius: 4px;
-  }
-  .bg-purple-dark {
-    background: #99a9bf;
-  }
-  .bg-purple {
-    background: #d3dce6;
-  }
-  .bg-purple-light {
-    background: #e5e9f2;
-  }
-  .grid-content {
-    border-radius: 4px;
-    min-height: 36px;
-  }
-  .row-bg {
-    padding: 10px 0;
-    background-color: #f9fafc;
-  }
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 18px;
+  opacity: 0.75;
+  line-height: 170px;
+  margin: 0;
+}
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.el-row {
+  margin-bottom: 20px;
+}
+.el-row:last-child {
+  margin-bottom: 0;
+}
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  background: #99a9bf;
+}
+.bg-purple {
+  background: #d3dce6;
+}
+.bg-purple-light {
+  background: #e5e9f2;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
 </style>

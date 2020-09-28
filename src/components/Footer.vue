@@ -2,33 +2,34 @@
   <div class="footer">
     <el-row>
       <el-col :span="6">
-        <div>
-          <a href="/">
-            <i class="el-icon-s-home"></i>
-            <p>首页</p>
-          </a>
+        <div @click="clickItem('/')" :class="{ active: $route.path === '/' }">
+          <i class="el-icon-s-home"></i>
+          <p>首页</p>
         </div>
       </el-col>
       <el-col :span="6">
-        <div>
-          <a href="/plan">
-            <i class="el-icon-star-on"></i>
-            <p>计划</p>
-          </a>
+        <div
+          @click="clickItem('/plan')"
+          :class="{ active: $route.path === '/plan' }"
+        >
+          <i class="el-icon-star-on"></i>
+          <p>计划</p>
         </div> </el-col
       ><el-col :span="6">
-        <div>
-          <a href="/shop">
-            <i class="el-icon-s-goods"></i>
-            <p>商城</p>
-          </a>
+        <div
+          @click="clickItem('/shop')"
+          :class="{ active: $route.path === '/shop' }"
+        >
+          <i class="el-icon-s-goods"></i>
+          <p>商城</p>
         </div> </el-col
       ><el-col :span="6">
-        <div>
-          <a href="/me">
-            <i class="el-icon-user-solid"></i>
-            <p>我的</p>
-          </a>
+        <div
+          @click="clickItem('/me')"
+          :class="{ active: $route.path === '/me' }"
+        >
+          <i class="el-icon-user-solid"></i>
+          <p>我的</p>
         </div>
       </el-col>
     </el-row>
@@ -36,10 +37,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    clickItem: function (path) {
+      this.$router.push(path);
+    },
+  },
+};
 </script>
 
-<style>
+<style scoped>
 .footer {
   position: fixed;
   bottom: 0;
@@ -47,18 +54,16 @@ export default {};
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
-.footer a {
-  text-decoration: none;
-  color: #000;
-}
-.footer i {
+i {
+  font-size: 30px;
   position: relative;
   bottom: 10px;
-  font-size: 35px;
-  color: #409EFF;
 }
-.footer p {
-  margin-bottom: 5px;
-  color: #409EFF;
+p {
+  position: relative;
+  bottom: 5px;
+}
+.active {
+  color: #409eff;
 }
 </style>

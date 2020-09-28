@@ -29,11 +29,27 @@
     </el-row>
     <!-- 轮播 -->
     <div class="banner">
-      <el-carousel trigger="click" indicator-position="none" arrow="none">
-        <el-carousel-item class="banner-img1"></el-carousel-item>
-        <el-carousel-item class="banner-img2"></el-carousel-item>
-        <el-carousel-item class="banner-img3"></el-carousel-item>
-        <el-carousel-item class="banner-img4"></el-carousel-item>
+      <el-carousel trigger="click" arrow="none">
+        <el-carousel-item class="banner-img1">
+          <h3>户外跑步 & 精准跑步记录，让你的跑步更加系统</h3>
+          <p>
+            精准跑步路线记录，跑前热身与跑后拉伸，Keep
+            提供更加完善和专业的跑步指导。
+          </p>
+        </el-carousel-item>
+        <el-carousel-item class="banner-img2">
+          <h3>运动社区 & 分享健身成果，一起进步</h3>
+          <p>
+            拍照记录每一天的变化，分享好友相互勉励，在 Same
+            健身不再是孤独的坚持。
+          </p>
+        </el-carousel-item>
+        <el-carousel-item class="banner-img3">
+          <h3>量体裁衣 & 多种健身训练供你选择</h3>
+          <p>
+            训练计划针对不同人群、各种器械和阶段健身目标组合编排，适用最广泛的健身场景。
+          </p>
+        </el-carousel-item>
       </el-carousel>
     </div>
     <!-- 导航 -->
@@ -48,9 +64,9 @@
 </template>
 
 <script>
-import Hot from "../components/Hot";
-import Follow from "../components/Follow";
-import Recommend from "../components/Recommend";
+import Hot from "./Hot";
+import Follow from "./Follow";
+import Recommend from "./Recommend";
 export default {
   data() {
     return {
@@ -67,6 +83,9 @@ export default {
 
 // 搜索
 <style scoped>
+.home {
+  padding-bottom: 35px;
+}
 .home-top {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -74,6 +93,7 @@ export default {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 3;
 }
 .home-top img {
   width: 43px;
@@ -111,8 +131,7 @@ export default {
 }
 .banner-img1,
 .banner-img2,
-.banner-img3,
-.banner-img4 {
+.banner-img3 {
   background-size: cover;
 }
 .banner-img1 {
@@ -122,10 +141,21 @@ export default {
   background-image: url("../assets/wallhaven-n6gzy7.jpg");
 }
 .banner-img3 {
-  background-image: url("../assets/wallhaven-4vd5zm.jpg");
-}
-.banner-img4 {
   background-image: url("../assets/wallhaven-4o7r25.jpg");
+}
+h3,
+p {
+  color: #fff;
+  position: relative;
+}
+h3 {
+  top: 40%;
+}
+p {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  top: 60%;
 }
 </style>
 // 导航
