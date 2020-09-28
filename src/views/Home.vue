@@ -16,11 +16,13 @@
       <el-col :span="3">
         <div>
           <el-dropdown>
-            <span class="el-dropdown-link"
-              ><i class="el-icon-arrow-down el-icon-plus"></i>
+            <span class="el-dropdown-link">
+              <i class="el-icon-arrow-down el-icon-plus"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>添加朋友</el-dropdown-item>
+              <el-dropdown-item>
+                <a href="/addFriend" class="addFriend">添加朋友</a>
+              </el-dropdown-item>
               <el-dropdown-item>扫一扫</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
@@ -64,8 +66,8 @@
 </template>
 
 <script>
-import Hot from "./Hot";
 import Follow from "./Follow";
+import Hot from "./Hot";
 import Recommend from "./Recommend";
 export default {
   data() {
@@ -122,6 +124,10 @@ export default {
 }
 .el-dropdown-link > i {
   font-size: 25px;
+}
+.addFriend {
+  color: #555;
+  text-decoration: none;
 }
 </style>
 // 轮播

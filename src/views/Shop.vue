@@ -1,25 +1,34 @@
 <template>
   <div class="shop">
     <!-- 商城顶部搜索 -->
-    <el-row type="flex" class="shop-top" justify="space-around">
-      <el-col :span="3">
+    <el-row
+      type="flex"
+      class="shop-top"
+      justify="space-around"
+      style="padding: 0px"
+    >
+      <el-col :span="3" style="margin-top: 15px">
         <div>
           <i class="el-icon-full-screen"></i>
         </div>
       </el-col>
       <el-col :span="16">
         <div>
-          <el-input placeholder="SAME商城" v-model="input" clearable>
-            <i class="el-icon-shopping-cart-1"></i>
+          <el-input
+            placeholder="SAME商城"
+            v-model="input"
+            clearable
+            style="margin-top: 15px"
+          >
           </el-input>
         </div>
       </el-col>
-      <el-col :span="2">
+      <el-col :span="2" style="margin-top: 15px">
         <div>
           <a href="" style="color: #409eff"><i class="el-icon-search"></i></a>
         </div>
       </el-col>
-      <el-col :span="3">
+      <el-col :span="3" style="margin-top: 15px">
         <div>
           <i class="el-icon-shopping-cart-1"></i>
         </div>
@@ -51,30 +60,26 @@
 
     <!-- 轮播图 -->
     <div class="banner">
-      <el-carousel trigger="click">
-        <el-carousel-item>
-          <el-image
-            :src="require('../assets/婴儿.png')"
-            :fit="contain"
-          ></el-image>
+      <el-carousel trigger="click" arrow="none">
+        <el-carousel-item class="banner-img1">
+          <h3>户外跑步 & 精准跑步记录，让你的跑步更加系统</h3>
+          <p>
+            精准跑步路线记录，跑前热身与跑后拉伸，Keep
+            提供更加完善和专业的跑步指导。
+          </p>
         </el-carousel-item>
-        <el-carousel-item>
-          <el-image
-            :src="require('../assets/婴儿.png')"
-            :fit="contain"
-          ></el-image>
+        <el-carousel-item class="banner-img2">
+          <h3>运动社区 & 分享健身成果，一起进步</h3>
+          <p>
+            拍照记录每一天的变化，分享好友相互勉励，在 Same
+            健身不再是孤独的坚持。
+          </p>
         </el-carousel-item>
-        <el-carousel-item>
-          <el-image
-            :src="require('../assets/婴儿.png')"
-            :fit="contain"
-          ></el-image>
-        </el-carousel-item>
-        <el-carousel-item>
-          <el-image
-            :src="require('../assets/婴儿.png')"
-            :fit="contain"
-          ></el-image>
+        <el-carousel-item class="banner-img3">
+          <h3>量体裁衣 & 多种健身训练供你选择</h3>
+          <p>
+            训练计划针对不同人群、各种器械和阶段健身目标组合编排，适用最广泛的健身场景。
+          </p>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -149,9 +154,12 @@
       </el-col>
     </el-row>
     <!-- 限时活动 -->
-    <el-row :gutter="10">
-      <el-col :span="12" :push="0">
-        <div class="grid-content bg-purple" style="background-color: #ad0707">
+    <el-row :gutter="5" style="margin-bottom: 0px">
+      <el-col :span="12" :push="0" style="margin-bottom: 0px">
+        <div
+          class="grid-content bg-purple"
+          style="margin-bottom: 0px; background-color: #ad0707"
+        >
           <h2 style="color: #ffdc00">限时秒杀</h2>
           <span style="color: #e5e9f2">{{
             hour
@@ -160,12 +168,12 @@
           }}</span>
           <br />
           <img
-            src="../assets/wallhaven-2k3go6.jpg"
-            style="height: 100px; width: 75px"
+            src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+            class="image"
           />
-          <br />
-          <span style="color: #ffffff">优选三文鱼-低至5折</span>
-          <br />
+          <div style="padding: 14px">
+            <span style="color: #ffffff">低脂汉堡</span>
+          </div>
         </div>
       </el-col>
 
@@ -179,25 +187,23 @@
           }}</span>
           <br />
           <img
-            src="../assets/wallhaven-nz5gkj.jpg"
-            style="height: 100px; width: 75px"
+            src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+            class="image"
           />
-          <br />
-          <span style="color: #ffffff">低卡鸡肉</span>
-          <br /></div
-      ></el-col>
-    </el-row>
-    <!-- 达人推荐榜 -->
-    <el-row>
-      <el-col :span="24"
-        ><div
-          class="grid-content bg-purple-dark"
-          style="background-color: #ff4000"
-        >
-          <h2 style="color: white">达人推荐榜</h2>
+          <div style="padding: 14px">
+            <span style="color: #ffffff">低脂汉堡</span>
+          </div>
         </div></el-col
       >
     </el-row>
+    <!-- 达人推荐榜 -->
+    <div
+      id="hot-nav"
+      class="grid-content bg-purple-dark"
+      style="background-color: #ff4000"
+    >
+      <h2 style="color: white">达人推荐榜</h2>
+    </div>
     <!-- 商品栏 -->
     <el-row :gutter="10">
       <el-col :span="6" :push="0">
@@ -218,7 +224,8 @@
             style="height: 100px; width: 75px"
           />
           <br />
-          <span style="color: #ffffff">低卡鸡肉卷-团购价29.9！</span>
+          <span style="color: black">运动耳机</span>
+          <span style="color: black">￥256</span>
           <br /></div
       ></el-col>
       <el-col :span="6" :push="0">
@@ -228,19 +235,43 @@
             style="height: 100px; width: 75px"
           />
           <br />
-          <span style="color: #ffffff">低卡鸡肉卷-团购价29.9！</span>
+          <span style="color: black">运动耳机</span>
+          <span style="color: black">￥256</span>
           <br /></div
       ></el-col>
       <el-col :span="6" :push="0">
-        <div class="grid-content bg-purple" style="background-color: #d3dce6">
+        <div class="grid-content bg-purple" style="background-color: #99a9bf">
           <img
             src="../assets/wallhaven-4lpdz2.jpg"
             style="height: 100px; width: 75px"
           />
           <br />
-          <span style="color: #ffffff">低卡鸡肉卷-团购价29.9！</span>
+          <span style="color: black">运动耳机</span>
+          <span style="color: black">￥256</span>
           <br /></div
       ></el-col>
+    </el-row>
+
+    <!-- 购物篮 -->
+    <el-row>
+      <el-col :xs="12" :sm="8" :md="6" v-for="o in 20" :key="o">
+        <el-card :body-style="{ padding: '0px' }">
+          <img
+            src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+            class="image"
+          />
+          <div style="padding: 14px">
+            <span>低脂汉堡</span>
+            <div class="bottom clearfix">
+              <span style="color: red; font-size: 20px">￥25&nbsp;</span>
+              <span style="font-size: 12px">已有75人购买</span>
+              <el-button type="text" class="button">
+                <i class="el-icon-circle-plus-outline"></i>
+              </el-button>
+            </div>
+          </div>
+        </el-card>
+      </el-col>
     </el-row>
   </div>
 </template>
@@ -320,8 +351,39 @@ export default {
 </script>
 
 <style scoped>
-.shop {
-  padding-bottom: 60px;
+.shop{
+    padding-bottom: 35px;
+}
+.banner {
+  margin-top: 0px;
+}
+.banner-img1,
+.banner-img2,
+.banner-img3 {
+  background-size: cover;
+}
+.banner-img1 {
+  background-image: url("../assets/wallhaven-0pwdw3.jpg");
+}
+.banner-img2 {
+  background-image: url("../assets/wallhaven-n6gzy7.jpg");
+}
+.banner-img3 {
+  background-image: url("../assets/wallhaven-4o7r25.jpg");
+}
+h3,
+p {
+  color: #fff;
+  position: relative;
+}
+h3 {
+  top: 40%;
+}
+p {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  top: 60%;
 }
 .shop-top {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -366,7 +428,7 @@ a {
   color: black;
 }
 .el-row {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .el-row:last-child {
   margin-bottom: 0;
@@ -390,5 +452,32 @@ a {
 .row-bg {
   padding: 10px 0;
   background-color: #f9fafc;
+}
+img {
+  height: 150px;
+}
+.bottom {
+  margin-top: 13px;
+  line-height: 12px;
+}
+.button {
+  padding: 0;
+  float: right;
+}
+.el-col {
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+i {
+  font-size: 20px;
+  position: relative;
+  bottom: 5px;
+}
+#hot-nav {
+  height: 100px;
+  width: 100%;
+  margin-top: 0;
+  line-height: 100px;
+  margin-bottom: 20px;
 }
 </style>

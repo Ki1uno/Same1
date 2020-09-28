@@ -9,7 +9,7 @@
         <div style="padding: 14px">
           <span>好吃的汉堡</span>
           <div class="bottom clearfix">
-            <span>11111111111111</span>
+            <span style="color: #999; font-size: 13px">哈哈哈哈哈哈</span>
             <el-button type="text" class="button">
               <i class="el-icon-star-off"></i>
             </el-button>
