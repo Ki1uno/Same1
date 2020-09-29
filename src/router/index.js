@@ -3,8 +3,10 @@ import VueRouter from "vue-router";
 
 import Home from "../views/Home.vue";
 import AddFriend from "../views/AddFriend.vue";
+import Sys from "../views/Sys.vue";
 import Plan from "../views/Plan.vue";
 import Shop from "../views/Shop.vue";
+import ShopCart from "../views/ShopCart.vue";
 import Me from "../views/Me.vue";
 
 Vue.use(VueRouter);
@@ -21,6 +23,11 @@ const routes = [
     component: AddFriend,
   },
   {
+    path: "/sys",
+    name: "Sys",
+    component: Sys,
+  },
+  {
     path: "/plan",
     name: "Plan",
     component: Plan,
@@ -29,6 +36,11 @@ const routes = [
     path: "/shop",
     name: "Shop",
     component: Shop,
+  },
+  {
+    path: "/shopCart",
+    name: "ShopCart",
+    component: ShopCart,
   },
   {
     path: "/me",

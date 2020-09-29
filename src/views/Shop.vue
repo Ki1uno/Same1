@@ -30,7 +30,9 @@
       </el-col>
       <el-col :span="3" style="margin-top: 15px">
         <div>
-          <i class="el-icon-shopping-cart-1"></i>
+          <a href="/shopCart" class="shopCart">
+            <i class="el-icon-shopping-cart-1"></i>
+          </a>
         </div>
       </el-col>
     </el-row>
@@ -351,8 +353,8 @@ export default {
 </script>
 
 <style scoped>
-.shop{
-    padding-bottom: 35px;
+.shop {
+  padding-bottom: 35px;
 }
 .banner {
   margin-top: 0px;
@@ -479,5 +481,10 @@ i {
   margin-top: 0;
   line-height: 100px;
   margin-bottom: 20px;
+}
+</style>
+<style scoped>
+.shopCart > i {
+  color: #409eff;
 }
 </style>

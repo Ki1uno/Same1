@@ -23,7 +23,9 @@
               <el-dropdown-item>
                 <a href="/addFriend" class="addFriend">添加朋友</a>
               </el-dropdown-item>
-              <el-dropdown-item>扫一扫</el-dropdown-item>
+              <el-dropdown-item>
+                <a href="/sys" class="sys">扫一扫</a>
+              </el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
         </div>
@@ -125,7 +127,8 @@ export default {
 .el-dropdown-link > i {
   font-size: 25px;
 }
-.addFriend {
+.addFriend,
+.sys {
   color: #555;
   text-decoration: none;
 }

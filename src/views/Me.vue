@@ -237,7 +237,6 @@ color:#5F6368;"
     </el-row>
   </div>
 </template>
-
 <script>
 export default {
   data() {
