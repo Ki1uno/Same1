@@ -8,6 +8,8 @@ import Plan from "../views/Plan.vue";
 import Shop from "../views/Shop.vue";
 import ShopCart from "../views/ShopCart.vue";
 import Me from "../views/Me.vue";
+import Login from "../views/Login.vue";
+import Create from "../views/Create.vue";
 
 Vue.use(VueRouter);
 
@@ -46,6 +48,16 @@ const routes = [
     path: "/me",
     name: "Me",
     component: Me,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
+  {
+    path: "/create",
+    name: "Create",
+    component: Create,
   },
 ];
 

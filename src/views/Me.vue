@@ -28,7 +28,7 @@
       </el-col>
       <el-col :span="3">
         <div>
-          <a href="#" style="color: #409eff"><i class="el-icon-setting"></i></a>
+          <a href="/login" style="color: #409eff"><i class="el-icon-setting"></i></a>
         </div>
       </el-col>
     </el-row>
