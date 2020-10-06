@@ -37,7 +37,7 @@
         <el-carousel-item class="banner-img1">
           <h3>户外跑步 & 精准跑步记录，让你的跑步更加系统</h3>
           <p>
-            精准跑步路线记录，跑前热身与跑后拉伸，Keep
+            精准跑步路线记录，跑前热身与跑后拉伸，Same
             提供更加完善和专业的跑步指导。
           </p>
         </el-carousel-item>
@@ -88,7 +88,7 @@ export default {
 // 搜索
 <style scoped>
 .home {
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 .home-top {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);

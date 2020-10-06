@@ -7,7 +7,7 @@
           class="image"
         />
         <div style="padding: 14px">
-          <span>好吃的汉堡</span>
+          <span>好吃的汉堡{{o}}</span>
           <div class="bottom clearfix">
             <span style="color: #999; font-size: 13px">哈哈哈哈哈哈</span>
             <el-button type="text" class="button">

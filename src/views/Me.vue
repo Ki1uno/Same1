@@ -43,7 +43,6 @@
         >
           <br />
           <el-avatar
-            :size="number"
             icon="el-icon-user-solid"
             style="width: 80px; height: 80px; font-size: 70px"
           >

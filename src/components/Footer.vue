@@ -37,13 +37,25 @@
 </template>
 
 <script>
+import $ from "jquery";
 export default {
   methods: {
     clickItem: function (path) {
       this.$router.push(path);
+      //   thisrouter.go(-1);
+    },
+  },
+  watch: {
+    $route(to, from) {
+      console.log(this.$route.path);
     },
   },
 };
+// $(function () {
+//   $(".footer").on("click", function () {
+//     console.log(this.$route);
+//   });
+// });
 </script>
 
 <style scoped>
